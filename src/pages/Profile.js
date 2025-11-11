@@ -84,7 +84,7 @@ const Profile = () => {
     fetchUserProfile(user.userId);
   }, [user]);
 
-  /*
+  
   useEffect(() => {
     if (user && token) {
       const userId = user.userId || user.id;
@@ -100,7 +100,7 @@ const Profile = () => {
       setLoading(false);
     }
   }, [user, token]);
-*/
+
   const showSnackbar = (message, severity = 'success') => {
     setSnackbar({ open: true, message, severity });
   };
